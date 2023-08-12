@@ -1,0 +1,16 @@
+from PIL import Image
+import matplotlib.pyplot as plt
+def disres(img_name):
+    # Set the figure size
+    fig = plt.figure(figsize=(13, 7))
+
+    # Open the image file
+    img = Image.open(img_name)
+    
+    f = {"family":"cambria","size":40}
+    # Display the image using matplotlib
+    plt.title("RESULT",fontdict=f)
+    plt.imshow(img)
+    plt.axis('off')  # Turn off axes
+    plt.show()
+disres("pics\\"+"22BD1A1227.png")    
